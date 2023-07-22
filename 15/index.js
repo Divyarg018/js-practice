@@ -1,11 +1,8 @@
-console.log('Welcome to tutorial 15');
+//console.log('Welcome to tutorial 15');
 
-let cont = document.querySelector('.no');
-cont = document.querySelector('.container');
-let nodeName = cont.childNodes[1].nodeName;
-let nodeType = cont.childNodes[1].nodeType;
-// console.log(nodeName)
-// console.log(nodeType)
+let ele = document.querySelector('.no');
+ele = document.querySelector('.container');
+
 // Node types
 // 1. Element
 // 2. Attribute
@@ -14,18 +11,26 @@ let nodeType = cont.childNodes[1].nodeType;
 // 9. document
 // 10. docType
 
- console.log(cont.childNodes);
-console.log(cont.children);
+
+let nodes = ele.childNodes;
+
+for(let n of nodes){
+    //console.log(n.nodeType);
+    if(n.nodeType == 1){
+        console.log(n.childNodes[0].nodeValue);
+    }
+}
+
 
 let container = document.querySelector('div.container');
 
  console.log(container.children[1].children[0].children);
+console.log("Balaji");
+//console.log(container.firstChild);
+//console.log(container.firstElementChild);
 
-console.log(container.firstChild);
-console.log(container.firstElementChild);
-
-console.log(container.lastChild);
-console.log(container.lastElementChild);
+//console.log(container.lastChild);
+//console.log(container.lastElementChild);
 console.log(container.children);
 console.log(container.childElementCount); // Count of child elements
 
