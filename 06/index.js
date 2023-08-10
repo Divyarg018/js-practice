@@ -16,7 +16,7 @@ console.log(html);
 
 
 // console.log(html[1]);
-// console.log(html.indexOf('<'));
+ //console.log(html.indexOf('<'));
 // console.log(html.lastIndexOf('<'));
 // console.log(html.charAt(3));
 // console.log(html.endsWith('dsfsdfd'));
@@ -32,4 +32,5 @@ let myHtml = `Hello ${name}
             <h1> This is "my" heading </h1>
             <p> You like ${fruit1} and ${fruit2}`;
 
-document.body.innerHTML = myHtml;            
+document.body.innerHTML = myHtml;        
+
