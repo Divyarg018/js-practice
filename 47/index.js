@@ -7,8 +7,9 @@ regex = /harry$/; // $ means expression will match if string ends with
 //index.js:13 The string harry is harry matches the expression harry$
 regex = /h.rry/;// . matches any one character
 regex = /h*rry/;// . matches any 0 or more character 
-regex = /ha?rryi?/;// . matches any 0 or more character 
-let str = "hrryj";
+regex = /ha?rryi?t/;// ? after character means that character is optional 
+regex = /h\*rry/;  //
+let str = "h*rry means codewith";
 
 
 let result = regex.exec(str);
