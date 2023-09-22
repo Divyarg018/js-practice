@@ -15,9 +15,32 @@ let s = "This is great code with harry and also harry bhai";
 */
 
 let result = reg.exec(s);
+
+if (result){
 console.log(result);
 console.log(result.input);
 console.log(result.index);
+}
 // result = reg.exec(s);
 // console.log(result); --> we can use multiple exec with global flag
+
+//2. test() - Returns true or false
+ let result2 = reg.test(s);
+//  console.log(result2);// this will only print true if the "reg" is there in a string "a"
+
+//3.match() - it will return an array of results or null
+
+let result3 = s.match(reg) // this is right
+console.log(result3);
+
+//4. search() - returns index of first match or -1
+
+let result4 = s.search(reg)
+console.log(result4);
+
+// 5. replace() - returns new replace string with all the replacements(if no flag is given, first match will be replaced)
+
+let result5 = s.replace(reg, 'SHUBHAM');
+console.log(result5);
+
 
