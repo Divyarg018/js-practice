@@ -1,5 +1,5 @@
 let reg = /harry/;// this is a regular expression literal in js
-//  reg = /harry/g;// g means global 
+ reg = /harry/g;// g means global 
 //  reg = /harry/i;// i means case sensitive 
 
 console.log(reg);
@@ -21,8 +21,8 @@ console.log(result);
 console.log(result.input);
 console.log(result.index);
 }
-// result = reg.exec(s);
-// console.log(result);  //we can use multiple exec with global flag
+result = reg.exec(s);
+console.log(result);  //we can use multiple exec with global flag
 
 //2. test() - Returns true or false
  let result2 = reg.test(s);
