@@ -22,11 +22,11 @@ console.log(result.input);
 console.log(result.index);
 }
 // result = reg.exec(s);
-// console.log(result); --> we can use multiple exec with global flag
+// console.log(result);  //we can use multiple exec with global flag
 
 //2. test() - Returns true or false
  let result2 = reg.test(s);
-//  console.log(result2);// this will only print true if the "reg" is there in a string "a"
+//  console.log(result2);// this will only print true if the "reg" is there in a string "s"
 
 //3.match() - it will return an array of results or null
 
