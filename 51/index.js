@@ -23,3 +23,11 @@ function fruitsIterator(values) {
 
 const myArray = ['Apples', 'Grapes', 'Oranges', 'Bhindi'];
 console.log("My array is  ", myArray);
+
+//Using the Iterator
+const fruits = fruitsIterator(myArray);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
