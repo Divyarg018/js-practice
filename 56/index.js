@@ -31,4 +31,14 @@ for(let char in myString){
     console.log(myString[char]);
 }
 
-// for off
+// for of
+console.log("******for of loops starts here********");
+people = ["Harry", "Rohan", "SkillF", "Shumbham", "Vikrant"];
+
+for(let name of people){
+    console.log(name);
+}
+
+for(let name of myString){
+    console.log(name);
+}
