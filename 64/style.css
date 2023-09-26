@@ -20,3 +20,15 @@ body{
     background-color: white;
     border: 3px black solid;
 }
+
+.hold{
+    border: solid red 4px;
+}
+.dashed{
+    background: grey;
+    border-style: dashed;
+}
+
+.hide{
+    display: none;
+}
