@@ -16,3 +16,17 @@ console.log(a, b, c,d);
 const fruits = ['Apple', 'Bananas', 'Mangoes'];
 [a, b, c] = fruits;
 console.log(a, b, c);
+
+
+//object destructuring
+const laptop ={
+    model: "HP Pavilion",
+    age: "23 years",
+    gender: "Male",
+    net: 1233,
+    start : function(){console.log('started')}
+}
+
+const {model, age, gender, net, start} = laptop
+console.log(model, age, gender, net, start);
+start();
